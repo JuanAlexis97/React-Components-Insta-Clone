@@ -9,9 +9,7 @@ import dummyData from "../../dummy-data";
 // pass props in this file to
 const Post = props => {
   // set up state for the likes
-  const [likes,setLikes] = useState(dummyData.map(function(e){
-    return e.likes;
-  }));
+  const [likes,setLikes] = useState(props.post.likes);
   console.log("likes",likes);
   return (
     <div className="post-border">
@@ -28,7 +26,7 @@ const Post = props => {
           src={props.post.imageUrl}
         />
       </div>
-      <LikeSection />
+      <LikeSection like={likes}/>
       <CommentSection
         postId={props.post.imageUrl}
         comments={props.post.comments}

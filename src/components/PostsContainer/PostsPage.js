@@ -12,7 +12,7 @@ const PostsPage = () => {
   // set up state for your data
   return (
     <div className="posts-container-wrapper">
-      {post.map(function(e){return (<Post post={post}/>)})}
+      {post.map(function(e){return (<Post post={e}/>)})}
     </div>
   );
 };

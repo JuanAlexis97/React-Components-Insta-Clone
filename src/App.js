@@ -8,6 +8,7 @@ import React from "react";
 import "./App.css";
 import PostsPage from "./components/PostsContainer/PostsPage";
 import SearchBar from "./components/SearchBar/SearchBarContainer";
+import Post from "./components/PostsContainer/Post";
 // import "./components/SearchBar/SearchBarContainer";
 
 // import the PostsPage and SearchBar and add them to the App
@@ -19,6 +20,7 @@ const App = () => {
     <div className="App">
       <PostsPage/>
       <SearchBar/>
+      
       {/* Add imported components here to render them */}
     </div>
   );
